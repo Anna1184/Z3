@@ -1,0 +1,14 @@
+fib1=0 
+fib2=1 
+n=int(input()) 
+flag=0 
+if n==0 or n==2 or n==3: 
+ flag=1 
+for i in range(n): 
+ fib1,fib2=fib2,fib1+fib2 
+ if n==fib1: 
+ flag=1 
+if flag==1: 
+ print('Yes') 
+if flag==0: 
+ print('No')
